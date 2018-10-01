@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# comentario
 
 import sys
 
 
-class CalculadoraHija:
+class Calculadora:
 
 
 	def plus(self, op1, op2, op3, op4, op5):
@@ -17,6 +16,8 @@ class CalculadoraHija:
 	    """ Function to substract the operands """
 	    return (((((op1 - op2) - op3) - op4) - op5) - op6)
 	    
+class CalculadoraHija(Calculadora):
+	
 	def multiply(self, op1, op2, op3):
 	    """ Function to substract the operands """
 	    return ((op1 * op2) * op3)
