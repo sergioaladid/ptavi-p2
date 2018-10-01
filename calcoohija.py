@@ -5,7 +5,7 @@
 import sys
 
 
-class CalculadoraHija:
+class Calculadora:
 
 
 	def plus(self, op1, op2):
@@ -17,6 +17,8 @@ class CalculadoraHija:
 	    """ Function to substract the operands """
 	    return op1 - op2
 	    
+class CalculadoraHija(Calculadora):  
+	  
 	def multiply(self, op1, op2):
 	    """ Function to substract the operands """
 	    return op1 * op2
@@ -29,7 +31,7 @@ class CalculadoraHija:
 		    sys.exit('Division by zero is not allowed.')
 
 micalc = CalculadoraHija()
- #micalc.minus(3,1)
+
 
 if __name__ == "__main__":
 
